@@ -1,0 +1,19 @@
+h1 {
+  background-color:purple;
+  }
+
+h2 {
+  color:red;
+  }
+
+h3 {
+      background-color: green;
+  }
+
+  .list-item {
+  color: purple;
+  }
+
+  #bonus-item {
+      color: rgba(135, 0, 65, 0.80);
+  }
