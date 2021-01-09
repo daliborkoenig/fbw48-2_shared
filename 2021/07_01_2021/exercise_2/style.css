@@ -1,0 +1,8 @@
+ol>li{
+    list-style-type: disc;
+    color: blue;
+}
+
+ol{
+    background-color: beige;
+}
