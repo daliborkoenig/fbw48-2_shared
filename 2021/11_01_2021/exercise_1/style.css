@@ -1,0 +1,117 @@
+* {
+    background-color: #949470;
+}
+
+/* descendant selectors */
+
+.section1 p {
+    color: #ffffff;
+    background-color: #0000ff;
+}
+
+h2 {
+    color: #ff4500;
+}
+
+/* Pseudo classes: is a keyword added to a selector that specifies the special state of the selected element */
+
+h1:hover {
+    background-color: #f7e708;
+}
+
+h2:hover {
+    background-color: #e23636;
+    color: #ffffff;
+}
+
+/* multiple selectors */
+h1:hover, h2:hover {
+    color: #62b90b;
+}
+
+/* :active pseudo class that represents an element (such as a button) that is being activatedby the user. When using a mouse, "activation" typically starts then the user presses the down primary mouse */
+
+a:active {
+    background-color: #000000;
+}
+
+/* :link once I press the mouse on an unvisited link you will see the font color change to white-ish */
+
+a:link {
+    color: #e9d8d8;
+}
+
+a:visited {
+    color: #2bf16d
+}
+
+/* CSS UNITS */
+
+.box {
+    background-color: #ff0000;
+    border: 3px solid #000000;
+}
+
+/* 50% of parent element */
+.per50 {
+    width: 50%;
+}
+
+/* 80px fixed */
+.pix80 {
+    width: 80px;
+}
+
+/* 50% of browser width */
+.vw50 {
+    width: 50vw;
+}
+
+/* 25% of browser height */
+.vh25 {
+    height: 25vh;
+}
+
+.box2 {
+    background-color: #adff2f;
+}
+
+.parent {
+    width: 150px;
+    border: 2px solid black;
+}
+
+.one-rem {
+    font-size: 1rem;
+}
+
+.one-em {
+    font-size: 1em;
+    color: #70b9f2;
+}
+
+.two-rem {
+    font-size: 2rem;
+}
+
+.two-em {
+    font-size: 2em;
+    color: #caca43;
+}
+
+.parent-rem-em {
+    font-size: 30px;
+}
+
+.key {
+    display: inline-block!important;
+    min-width: 35px;
+    height: 35px;
+    padding: 4px 0 0 6px;
+    background: #f5f5f5;
+    border: 2px solid #b3b3b3;
+    border-radius: 6px;
+    box-shadow: inset -6px -4px 0 0 #ccc;
+    text-align: left;
+    font-size: 15px;
+}

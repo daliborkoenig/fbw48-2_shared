@@ -1,0 +1,45 @@
+.page-title {
+    color: #dad8d8;
+    background-color: #f58ea0;
+}
+
+.topic-title {
+    color: #f113f1;
+    background-color: #dad8d8;
+}
+
+.pink {
+    background-color: #ff69b4;
+}
+
+.sub-topic-title {
+    background-color: #ebf64d;
+}
+
+.sub-topic-title:hover {
+    color: #ffffff;
+}
+
+ul {
+    background-color: #1ed7f0;
+}
+
+.circle {
+    list-style: circle;
+}
+
+.none {
+    list-style: none;
+}
+
+a.pagelinks {
+    color: #ff69b4;
+}
+
+a.pagelinks:visited {
+    color: #1ed7f0;
+}
+
+a.weblinks:active {
+    background-color: #ebf64d;
+}
