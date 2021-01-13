@@ -1,0 +1,41 @@
+section {
+    width: 300px;
+    height: 400px;
+}
+
+.section_1 {
+    border: 1px solid red;
+}
+
+.section_2 {
+    border: 3px solid green
+}
+
+.section_3 {
+    border: 5px solid blue;
+    color: red;
+}
+
+#contact_form {
+    border: 8px solid brown;
+}
+
+#sub {
+    border: 10px solid pink;
+}
+
+.contact_form {
+    border: 20px solid greenyellow;
+}
+
+.w_100 {
+    width: 100vw;
+}
+
+.section_3 p {
+    color: initial;
+}
+
+.section_3 p span {
+    color: blue;
+}

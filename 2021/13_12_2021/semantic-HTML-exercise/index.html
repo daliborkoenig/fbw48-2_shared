@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Baloo+Bhai&display=swap" />
+  <title>Semantics</title>
+</head>
+
+<body>
+  <header>
+    <h1>HTML Semantic Elements</h1>
+    <h3 class="sub-title">
+      Exercise: replace all of the generic tags (div & span) with semantic
+      tags
+    </h3>
+  </header>
+  <nav>
+    <h3 class="sub-title">Content:</h3>
+    <ul>
+      <li><a href="#definition"> 1. Definition </a></li>
+      <li><a href="#benefits"> 2. Why we use semantic elements? </a></li>
+      <li><a href="#generic"> 3. Some generic HTML elements </a></li>
+      <li><a href="#exercise"> 4. Exercise instructions </a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Definition</h2>
+      <p>Semantic elements = elements with a meaning.</p>
+      <h3>What are Semantic Elements?</h3>
+      <p>
+        A semantic element clearly describes its meaning to both the browser
+        and the developer. Examples of non-semantic elements:
+        <mark> &lt;div> </mark> and
+        <mark> &lt;span> </mark> - Tells nothing about its
+        content. Examples of semantic elements:
+        <mark> &lt;form> </mark>,
+        <mark> &lt;table> </mark>, and
+        <mark> &lt;article> </mark> - Clearly defines its
+        content.
+      </p>
+      <p>
+        <b><i>source:<a href="https://www.w3schools.com/html/html5_semantic_elements.asp" target="blank">
+              W3School
+            </a></i></b>
+
+      </p>
+    </section>
+    <section>
+      <h2> Why we use semantic elements? </h2>
+      <ul><li>
+        Search engines will consider its contents as important keywords to
+        influence the page's search rankings
+      </li>
+      <li>
+        Screen readers can use it as a signpost to help visually impaired
+        users navigate a page
+      </li>
+      <li>
+        Finding blocks of meaningful code is significantly easier than
+        searching through endless divs with or without semantic or
+        namespaced classes
+      </li>
+      <li>
+        Suggests to the developer the type of data that will be populated
+      </li>
+      <li>
+        Semantic naming mirrors proper custom element/component naming
+      </li></ul>
+      <p><b><i>source:
+            <a href="https://developer.mozilla.org/en-US/docs/Glossary/Semantics" target="blank">
+              MDN
+            </a></i></b>
+      </p>
+    </section>
+
+    <aside>
+      <figure>
+        <img src="layout.jpg" alt="layout of this page" width="250" />
+        <figcaption>Page Layout</figcaption>
+      </figure>
+
+      <h2>What elements should I use?</h2>
+      <p>
+        When approaching which markup to use, ask yourself, "What element(s)
+        best describe/represent the data that I'm going to populate?" For
+        example, is it a list of data?; ordered, unordered?; is it an article
+        with sections and an aside of related information?; does it list out
+        definitions?; is it a figure or image that needs a caption?; should it
+        have a header and a footer in addition to the global site-wide header
+        and footer?; etc.
+      </p>
+    </aside>
+
+    <article>
+      <h2>Some generic HTML elements</h2>
+      <h3><u>Block level element</u></h3>
+      <p>
+        <b>div:</b> The HTML Content Division element &lt;div> is the generic
+        container for flow content. It has no effect on the content or layout
+        until styled in some way using CSS
+      </p>
+      <h3><u>Inline level element</u></h3>
+      <p>
+        <b>span:</b> The HTML &lt;span> element is a generic inline container
+        for phrasing content, which does not inherently represent anything. It
+        can be used to group elements for styling purposes (using the class or
+        id attributes), or because they share attribute values, such as lang.
+      </p>
+      <p><b><i>source:
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element#text_content" target="blank">
+              MDN
+            </a></i></b>
+
+      </p>
+    </article>
+    <article>
+      <h2> Exercise instructions: </h2>
+      <ol>
+        <li>
+          go to: <a href="https://github.com/tareq-almasri/semantic-HTML-exercise"><i>Exercise repo</i></a> on github
+          and download it
+          to your device.
+        </li>
+        <li> open the folder you just downloaded with VScode. </li>
+        <li>
+          edit both index.html and style.css by replacing every div and span
+          with the proper semantic element that fits its content.
+        </li>
+      </ol>
+    </article>
+  </main>
+  <footer> John Doe &copy; 2021 </footer>
+</body>
+
+</html>

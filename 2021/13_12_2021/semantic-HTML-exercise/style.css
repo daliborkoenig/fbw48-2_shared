@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+}
+header {
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  background-color: #000;
+}
+
+.source{
+  font-weight: 900;
+  font-style: italic;
+}
+
+nav {
+  font-family: Baloo Bhai;
+  padding: 10px 50px;
+  background-color: #26f2a4;
+  border-bottom: 2px solid black;
+}
+
+a {
+  color: #000;
+}
+
+a:hover {
+  color: #b526f2;
+}
+main {
+  font-family: Source Sans Pro;
+  position: relative;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+aside {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  padding: 20px;
+  width: 30%;
+  border-left: 2px solid #000;
+}
+figure {
+  padding: 20px;
+}
+section {
+  padding: 50px 10%;
+  width: 40%;
+  border-bottom: 2px solid black;
+}
+
+article {
+  padding: 50px;
+}
+
+footer {
+  padding: 40px;
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+}

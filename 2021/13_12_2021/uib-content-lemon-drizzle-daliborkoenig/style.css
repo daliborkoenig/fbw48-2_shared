@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.img-cake {
+    width: 400px;
+}
+
+.ingredient {
+    border: 2px solid #d5d5d5;
+    background: #e4f7e4
+}
+
+.cake {
+    background: lightblue;
+    list-style: square;
+}
+
+.drizzle {
+    background: lightgreen;
+    list-style: circle;
+}
+
+.icing {
+    background: orange;
+    list-style-type: disc;
+}
+
+.method {
+    list-style: lower-roman;
+}
+
+.link-recipe {
+    text-decoration: none;
+    color: red;
+}
+
+.link-recipe:hover {
+    color: green;
+}
+
+.link-paul {
+    text-decoration: none;
+    color: blue;
+}
+
+.link-paul:hover {
+    color: orange;
+}
