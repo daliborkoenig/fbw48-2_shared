@@ -1,0 +1,29 @@
+  main {
+    margin: 30px;
+  }
+  
+  img {
+    height: 100px;
+  }
+  
+  /* Task 1 */
+  h3 {
+    color: blue;
+  }
+  /* Task 2 */
+  .red {
+    color: red;
+  }
+  /* Task 3 */
+  img ~ img {
+    border: 5px solid black;
+  }
+  /* Task 4 */
+  a[href$=".com"] {
+    color: yellow;
+  }
+  /* Task 5 */
+  
+  #sneaky-sneaky-task-five {
+    color: pink
+  }
