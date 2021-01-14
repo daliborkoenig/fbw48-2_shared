@@ -1,0 +1,39 @@
+.header {
+    /* background-image: url("/assets/header-bg.svg"); */
+    width: 98.5vw;
+    height: 20vh.5vh;
+    border: 3px dotted black;
+}
+
+/* navbar styles */
+
+.navbar {
+    width: 100%;
+    /* height: 118px;
+    border: 3px double red; */
+    background-color: #505e6f;
+}
+
+.logo {
+    /* border: 2px solid green; */
+    padding: 20px;
+    float: left;
+}
+
+.navbar-desktop {
+    /* border: 2px solid green; */
+    /* margin-left: 10vw; */
+    /* height: 23vh; */
+    padding: 70px 0;
+}
+
+.navbar-link { 
+    /* border: 2px solid green; */
+    padding: 15px 30px 0px 15px;
+    font-size: 30px;
+}
+
+.navbar-link:hover { 
+    color: gray;
+    cursor: pointer;
+}

@@ -1,0 +1,32 @@
+body   {
+    /* border: 3px solid yellow; */
+    /* margin: 0;
+    padding: 0; */
+    margin: 0;
+}
+
+.first-container {
+    width: 100%;
+    /* border: 3px solid blue; */
+    text-align: center;
+}
+
+.sub-container  {
+    /* border: 3px solid red; */
+    /* width: 20vw; */
+    height: 73vh;
+    font-size: 15px;
+    /* padding: 50px; */
+    /* margin-left: 100px; */
+    text-align: justify;
+}
+
+.inline {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.upper-article {
+    padding: 10px;
+}
+
