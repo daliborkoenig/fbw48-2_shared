@@ -1,0 +1,48 @@
+body {
+    background-color: black;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    height: 100%;
+    /* display: table; */
+}
+
+.inline {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.main-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 15vh;
+}
+.container-text {
+    /* border: 2px solid white; */
+    width: 20vw;
+    height: 55vh;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    position: relative;
+}
+
+.container-arrow {
+    /* border: 2px solid white; */
+    width: 20vw;
+    height: 55vh;
+}
+
+.container-links {
+    /* border: 2px solid white; */
+    width: 20vw;
+    height: 55vh;
+    margin-top: 1vh;
+}
+
+.arrow {
+    width: 10vw;
+    padding: 10px;
+}
