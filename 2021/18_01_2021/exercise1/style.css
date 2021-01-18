@@ -1,0 +1,58 @@
+* {
+    /* resets the browser settings for padding and margin to zero */
+    padding: 0;
+    margin: 0;
+    /* background-color: aqua; */
+        /* border-box makes the height and width including padding and margin, it is usually * (universal selector) so it applies to the whole page */
+        box-sizing: border-box;
+}
+
+.box-one { 
+    background-color: bisque;
+    /* padding goes around the content */
+    padding: 20px;
+    height: 100px;
+    border: 20px solid black;
+    /* margin is space outide the border, it spaces the elements apart */
+    margin: 50px;
+
+}
+
+.box-two {
+    background-color: aquamarine;
+    padding: 20px;
+    height: 200px;
+    border: 15px solid green;
+    /* margin collapses between two elements that are next to each other, the largest margin is used */
+    margin: 15px;
+}
+
+.box-three {
+    background-color: grey;
+    padding: 35px;
+    margin: 30px;
+    border: 10px solid blue;
+    margin: 25px;
+}
+
+.block {
+    border: 2px solid black;
+    width: 20%;
+}
+
+/* inline */
+.inline {
+    border: 2px solid black;
+    display: inline;
+    width: 20%;
+    margin: 30px;
+    padding: 20px;
+}
+
+.inline-block {
+    border: 2px solid black;
+    display: inline-block;
+    width: 20%;
+    margin: 30px;
+    padding: 20px;
+}
