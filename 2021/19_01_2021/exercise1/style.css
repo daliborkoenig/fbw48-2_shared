@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+    
+body {
+
+}
+/* static position: default position of all html elements, it follows the order of html */
+
+.parent {
+    padding: 5px;
+    background-color: #00aaff;
+    /* if we add position relative to the parent, the child will stay absolute to the parent, otherwise it positons in regards to the html */
+    position: relative;
+    /* height: 200vh; */
+}
+
+.child {
+    padding: 15px;
+}
+
+.child-one {
+    background-color: rgb(116, 255, 116);
+    position: relative;
+    left: 15px;
+}
+
+.child-two {
+    background-color: rgb(255, 116, 232);
+    position: absolute;
+    top: 0;
+}
+
+.child-three {
+    background-color: rgb(248, 117, 117);
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.child-four {
+    background-color: rgb(100, 117, 117);
+    position: sticky;
+    top: 0;
+    right: 0;
+}
+
+/* z-index */
+
+.box {
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+.box-red {
+    background-color: red;
+    /* position: absolute; */
+    top: 90px;
+    /* default value for z-index is 0 */
+    z-index: 1;;
+}
+
+.box-blue {
+    background-color: blue;
+    top: 60px;
+}
+
+.box-green {
+    background-color: green;
+    z-index: -1;
+
+}

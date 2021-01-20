@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#page-container {
+    background-image: url(/images/Black-Brush-Stroke.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: cover;
+    background-color: #2a323d;
+    /* display: block; */
+    width: 100%;
+    height: 100%;
+}
+
+#webpage-wrapper {
+    border: 1px solid black;
+    /* padding: 1%; */
+    position: relative;
+}
+
+#header {
+    background-image: url(/images/header.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 60vh;
+    position: relative;
+}
+
+#footer{
+    height: 30vh;
+    background-color: #dce4ec;
+}
+
+#footer-stroke {
+    width: 100%;
+    position: absolute;
+    top: 87%;
+}
+
+
+#logo {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+.button-red {
+    position: absolute;
+    top: 50%;
+    left: 14%;
+}
+
+.button-black {
+    position: absolute;
+    top: 63%;
+    left: 14%;
+}
+
+.button-black:hover , .button-red:hover {
+    transform: scale(1.1);
+}
+
+.button-buy , .button-play {
+    color: white;
+    position: absolute;
+    font-size: x-large;
+}
+.button-buy {    
+    top: 53%;
+    left: 19%;
+}
+
+.button-play {
+    top: 66%;
+    left: 19%;
+}
+
+.button-buy:hover , .button-play:hover {
+    transform: scale(1.1);
+}
+
+.inline {
+    display: inline-block;
+}
+
+.article {
+    border: 1px solid black;
+}
+
+.video-player {
+    width: 60vw;
+    height: 60vh;
+    margin-left: 20%;
+}
+
+#gallery {
+    width: 60vw;
+    margin-left: 20%;
+    display: inline-block;
+    text-align: center;
+}
+
+.gallery-image {
+    width: 33%;
+    margin: 1px;
+}
+
+a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+  }
+
+
