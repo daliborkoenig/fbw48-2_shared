@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: cyan; 
+    /* z-index: 1; */
+  }
+
+li:nth-child(2) {
+    color: blue;
+  }
+
+.h3 {
+    color: rgb(255, 165, 0);
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+footer a:visited {
+    color: green;
+}
+
+footer a:hover {
+    color: red;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.box-model {
+    padding: 5px;
+    margin: 10%;
+}
+
+main {
+    position: relative;
+    padding-top: 2%;
+}
+
+/* #footer {
+    width: 100%;
+    bottom: 0;
+} */
