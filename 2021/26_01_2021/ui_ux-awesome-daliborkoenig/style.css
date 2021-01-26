@@ -1,0 +1,30 @@
+
+.nav-item, .media-links {
+    list-style: none;
+}
+
+p, h1{
+    display: inline-block;
+}
+
+h1{
+    text-decoration: underline;
+}
+
+header{
+    text-align: center;
+}
+
+footer .review{
+    text-align: center;
+    text-shadow: 10px 10px 10px black;
+    text-transform: uppercase;
+}
+
+h4{
+    display: inline-block;
+}
+
+ul li{
+    text-align: center;
+}

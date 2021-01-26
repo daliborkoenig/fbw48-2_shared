@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* PART ONE */
+
+.part-1 li::after{
+    content: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/161359/quotes.png);
+    display: inline-block;
+    zoom: 10%;
+    vertical-align: top;    
+}
+
+.part-1 li::before{
+    content: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/161359/quotes.png);
+    display: inline-block;
+    zoom: 10%;    
+    vertical-align: top;
+    }
+
+
+    /* PART TWO */
+.part-2{
+    color: blue;
+}
+.pdf::after{
+    content: url(https://img.icons8.com/officel/64/000000/pdf.png);
+    display: inline-block;
+    zoom: 50%;    
+    vertical-align: middle;
+    padding-left: 15px;
+}
+
+.doc::after{
+    content: url(https://img.icons8.com/dusk/64/000000/ms-word.png);
+    display: inline-block;
+    zoom: 50%;    
+    vertical-align: middle;
+    padding-left: 10px;
+}
+
+.xls::after{
+    content: url(https://img.icons8.com/dusk/64/000000/ms-excel.png);
+    display: inline-block;
+    zoom: 50%;    
+    vertical-align: middle;
+    padding-left: 20px;
+}
+
+    /* PART THREE */
+/* added a margin and width so it looks nicer */
+
+.one{
+    border: 1px solid black;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.two{
+    border: 1px solid black;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.one::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 16px;
+    background: linear-gradient(120deg, #eaee44, #33d0ff);
+    /* opacity: .7; */
+}
+
+.one::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 16px;
+    background: linear-gradient(120deg, #33d0ff, #eaee44);
+    /* opacity: .7; */
+}
+
+.two::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 16px;
+    background: linear-gradient(120deg, #33d0ff, #eaee44);
+    /* opacity: .7; */
+}
+
+.two::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 16px;
+    background: linear-gradient(120deg, #eaee44, #33d0ff);
+    /* opacity: .7; */
+}
