@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 40px;
+    font-family: 'Open Sans', sans-serif;
+    color: blue;
+}
+
+blockquote {
+    margin: 0 0 0 30px;
+}
+
+h1, h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h3{
+    font-size: 1.5rem;
+    text-align: center;
+    letter-spacing: -2px;
+    word-spacing: 20px;
+}
+
+blockquote{
+    font-style: italic;
+    line-height: 4;
+}
+
+span{
+    text-decoration: line-through;
+}
+
+em{
+    text-transform: capitalize;
+}
+
+strong{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: green;
+}

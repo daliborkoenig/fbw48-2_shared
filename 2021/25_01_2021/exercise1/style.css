@@ -1,0 +1,85 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+} */
+/* 
+.parent-rem-em{
+    font-size: 25px;
+}
+
+.one-rem{
+    font-size: 1rem;
+}
+
+.one-em{
+    color: blue;
+    font-size: 1em;
+}
+
+.two-em{
+    font-size: 2em;
+    color: red;
+}
+
+.innerchild{
+    font-size: 2em;
+}
+
+.rtl{
+    direction: rtl;
+}
+
+.random{
+    text-align: justify;
+    text-align: center;
+    width: 100%;
+}
+
+h1{
+    font-size: 5rem;
+} */
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 , h3{
+    background-color: rgb(128,255,0);
+    font-size: 3rem;
+}
+
+.transform{
+    text-transform: uppercase;
+}
+
+li:nth-child(1){
+    text-decoration: underline;
+}
+
+li:nth-child(2){
+    text-decoration: line-through;
+}
+
+.shadow{
+    text-shadow: 2px 6px 4px rgba(0, 0, 0, 0.4);
+}
+
+.pseudo::before{
+    content: "must read";
+    display: inline-block;
+    color: blueviolet;
+}
+
+.pseudo::after{
+    content: "*";
+    color: red;
+}
