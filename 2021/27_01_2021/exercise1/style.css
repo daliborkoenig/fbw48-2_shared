@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: sans-serif;
+    font-size: 1.6rem;
+}
+.header{
+    text-align: center;
+}
+
+/* .details{
+    width: 60%;
+    height: 200px;
+    border: 1px solid black;
+    margin: auto;
+} */
+
+.javascript,
+.php,
+.webDev,
+.sysAdmin,
+.experience,
+.select
+{
+    padding: 10px;
+}
+
+#userName{
+    width: 500px;
+}
+

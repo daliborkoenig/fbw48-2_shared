@@ -1,0 +1,105 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+}
+
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.6rem;
+}
+
+.inline{
+  display: inline-block;
+}
+
+.header{
+  text-align: center;
+}
+
+main{
+  position: relative;
+}
+
+legend{
+  margin-left: 20px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: purple;
+}
+
+.personal-data, .products{
+  width: 47%;
+  /* border: 1px solid black; */
+  padding: 10px;
+  vertical-align: top;
+  margin: 20px;
+}
+
+.labels, p{
+  font-weight: bold;
+}
+
+#individual,
+#template, 
+#htmlandcss,
+#javascript,
+#mongodb{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+#firstName,
+#lastName,
+#street,
+#zipCode,
+#city,
+#phone,
+#email,
+#projectStart,
+#projectEnd,
+#category
+{
+  margin-top: 10px;
+  width: 100%;
+  height: 32px;
+}
+
+#comments{
+  margin-top: 10px;
+  width: 100%;
+  height: 100px;
+}
+
+.firstName,
+.lastName,
+.street,
+.zipCode,
+.city,
+.phone,
+.email,
+.comments,
+.webDesign,
+.webDevelopment,
+.projectStart,
+.projectEnd,
+.category{
+  padding: 10px;
+}
+
+.button{
+  top: 64%;
+  left: 51%;
+  position: absolute;
+  width: 10%;
+  height: 5%;
+  border-radius: 10px;
+  background: greenyellow;
+  color: white;
+  font-size: 1.6rem;
+}

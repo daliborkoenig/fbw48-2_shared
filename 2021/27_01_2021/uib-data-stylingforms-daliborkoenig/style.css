@@ -1,0 +1,112 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+}
+
+body{
+  font-family: sans-serif;
+  font-size: 1.6rem;
+  background: url(./images/background.jpg), black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+}
+
+.header{
+  text-align: center;
+}
+
+.header img{
+  width: 45%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.main-text{
+  text-align: center;
+  margin: auto;
+  width: 45%;
+  background: rgba(255, 255, 255, 0.8);
+  border: 10px solid black;
+  padding: 1%;
+  margin-bottom: 1%;
+  color: rgb(70, 70, 70);
+}
+
+h1{
+  font-weight: 100;
+  font-size: 5rem;
+  padding-bottom: 1%;
+}
+
+p{
+  font-size: 2.5rem;
+}
+
+.reservation{
+  text-align: center;
+  margin: auto;
+  width: 45%;
+  background: rgba(255, 255, 255, 0.8);
+  color: rgb(70, 70, 70);
+}
+
+.reservation h2, p{
+  padding: 1%;
+}
+
+form{
+  width: 80%;
+  margin: auto;
+  text-align: left;
+}
+
+label{
+  height: 2vh;
+  font-size: 0.9rem;
+  color: white;
+  padding: 3px;
+  display: block;
+  margin-left: 20%;  
+  background-color: rgb(70, 70, 70);
+  width: 60%;
+  border: none;
+  font-weight: bold;
+}
+
+input{
+  width: 60%;
+  height: 4vh;
+  margin-left: 20%;
+  margin-bottom: 2%;
+  font-style: italic;
+  border: none;
+  font-family: serif;
+  font-size: 1.6rem;
+  padding: 1%;
+}
+
+button{
+  width: 60%;
+  height: 3vh;
+  margin-left: 20%;
+  margin-bottom: 5%;
+  font-style: italic;
+  font-family: serif;
+  font-size: 1.6rem;
+  background-color: rgb(70, 70, 70);
+  color: white;
+  border: none;
+}
+
+.footer{
+  padding: 3%;
+  text-align: center;
+  color: white;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Forms</title>
+</head>
+
+<body>
+    <header class="header">Contact form</header>
+
+    <main class="main">
+        <form action="" method="POST">
+            <div class="details">
+                <fieldset>
+                    <legend>Your details</legend>
+                    <div class="userName">
+                        <label for="userName">User Name:</label>
+                        <input 
+                            id="userName" 
+                            type="text" 
+                            name="userName" 
+                            placeholder="Please write your Name"
+                            value="Alex"
+                            />
+                    </div>
+
+                    <div class="userEmail">
+                        <label for="userEmail">User Email:</label>
+                        <input
+                            id="userEmail"
+                            type="email"
+                            name="userEmail"
+                            placeholder="Please type your email address"
+                        />
+                    </div>
+                </fieldset>
+            </div>
+            <div class="experience">
+                <fieldset>
+                    <legend>Your programming exeperince</legend>
+                    <p>Select your favourite language</p>
+
+    <!-- Radio buttons! = one or the other (or the other) -->
+
+                    <div class="javascript">
+                        <input id="javascript" name="javascript" type="radio" value="javascript" checked>
+                        <label for="javascript">Javascript</label>
+                    </div>
+                    <div class="php">
+                        <input id="php" name="php" type="radio" value="php">
+                        <label for="php">PHP</label>
+                    </div>
+                    <p>What careers are you considering</p>
+                    <div class="webDev">
+                        <input id="webDev" name="webDev" type="checkbox">
+                        <label for="webDev">Web Dev</label>
+                    </div>
+                    <div class="sysAdmin">
+                        <input id="sysAdmin" name="sysAdmin" type="checkbox" checked>
+                        <label for="sysAdmin">Sys Admin</label>
+                    </div>
+                    <div class="experience">
+                        <div>
+                            <label for="experience">Tell us about your experience</label>
+                        </div>
+                        <textarea id="experience" name="experience" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="select">
+                        <div>
+                            <label for="select">How did you find out about us?</label>
+                        </div>
+                        <select name="select" id="select">
+                            <option value="" disabled selected>--Please choose an option--</option>
+                            <option value="internet">Internet</option>
+                            <option value="socialmedia">Social Media</option>
+                            <option value="newspaper">Newspaper</option>
+                        </select>
+                    </div>
+                    <div class="upload">
+                        <label for="upload">Upload your file</label>
+                        <input name="upload" id="upload" type="file">
+
+                    </div>
+                </fieldset>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+
+
+    </main>
+
+</body>
+
+</html>

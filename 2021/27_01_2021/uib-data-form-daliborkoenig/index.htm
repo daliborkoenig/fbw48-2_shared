@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>data Form exercise</title>
+  </head>
+  <body>
+    <header class="header">EXERCISE DATA FORM</header>
+
+    <main>
+      <form action="" method="POST">
+        <div class="personal-data inline">
+          <fieldset>
+            <legend>Personal Data</legend>
+            <div class="firstName">
+              <div class="labels"><label for="firstName">First Name:</label></div>
+              <input type="text" name="firstName" id="firstName" />
+            </div>
+            <div class="lastName">
+              <div class="labels"><label for="lastName">Last Name:</label></div>
+              <input type="text" name="lastName" id="lastName">
+            </div>
+            <div class="street">
+              <div class="labels"><label for="street">Street :</label></div>
+              <input type="text" name="street" id="street">
+            </div>
+            <div class="zipCode">
+              <div class="labels"><label for="zipCode">Zipcode:</label></div>
+              <input type="text" name="zipCode" id="zipCode">
+            </div>
+            <div class="city">
+              <div class="labels"><label for="city">City:</label></div>
+              <input type="text" name="city" id="city">
+            </div>
+            <div class="phone">
+              <div class="labels"><label for="phone">Phone:</label></div>
+              <input type="text" name="phone" id="phone">
+            </div>
+            <div class="email">
+              <div class="labels"><label for="email">Email:</label></div>
+              <input type="email" name="email" id="email">
+            </div>
+            <div class="comments">
+              <div class="labels"><label for="comments">Comments:</label></div>
+              <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Tell us more about you..."></textarea>
+            </div>
+          </fieldset>
+        </div>
+        <div class="products inline">
+          <fieldset>
+            <legend>Products</legend>
+            <div class="webDesign">
+              <p>Web Design:</p>
+              <input type="radio" name="individual" id="individual" checked>
+              <label for="individual">Individual</label>
+              <input type="radio" name="template" id="template">
+              <label for="template">template</label>
+            </div>
+            <div class="webDevelopment">
+              <p>Web Development:</p>
+              <div class="htmlandcss">
+                <input type="checkbox" name="htmlandcss" id="htmlandcss">
+                <label for="htmlandcss">HTML & CSS</label>                
+              </div>
+              <div class="javascript">
+                <input type="checkbox" name="javascript" id="javascript">
+                <label for="javascript">JavaScript</label>                
+              </div>
+              <div class="mongodb">
+                <input type="checkbox" name="mongodb" id="mongodb">
+                <label for="mongodb">MongoDB</label>
+              </div>
+            </div>
+            <div class="projectStart">
+              <div class="labels"><label for="projectStart">Project Start:</label></div>
+              <input type="date" name="projectStart" id="projectStart">
+            </div>
+            <div class="projectEnd">
+              <div class="labels"><label for="projectEnd">Project End:</label></div>
+              <input type="date" name="projectEnd" id="projectEnd">
+            </div>
+            <div class="category">
+              <div class="labels"><label for="category">Category:</label></div>
+              <select name="category" id="category">
+                <option value="" disabled selected>--Please select--</option>
+                <option value="personal">Personal</option>
+                <option value="business">Business</option>
+              </select>
+            </div>
+          </fieldset>
+        </div>
+        <button class="button" type="submit">Order our services</button>
+    </form>
+
+    </main>
+  </body>
+</html>
