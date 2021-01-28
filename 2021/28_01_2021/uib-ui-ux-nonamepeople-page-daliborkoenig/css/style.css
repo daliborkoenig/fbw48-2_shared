@@ -1,0 +1,177 @@
+/* ------------------ MAIN STYLING ------------------ */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1;
+	color: #000f37;
+}
+
+.inline{
+	display: inline-block;
+}
+
+/* ------------------ HEADER STYLING ------------------ */
+
+.header{
+	/* border: 1px solid black; */
+	width: 100%;
+	height: 30vh;
+}
+
+.logo{
+	float: left;	
+	zoom: 2;
+	padding-left: 5%;
+	padding-top: 4%;
+	color: #68e1fd;
+}
+
+.logo::before{
+	content: url("../assets/png/logo2.png");
+	zoom: 0.15;
+}
+
+.menu{
+	float: right;
+	zoom: 3;
+	padding-right: 5%;
+	padding-top: 5%;
+	}
+
+/* ------------------ MAIN STYLING UP ------------------ */
+.up{
+	/* border: 1px solid black; */
+	height: 100vh;
+	width: 100%;
+	vertical-align: top;
+	white-space: nowrap;
+}
+
+.left{
+	/* border: 1px solid black; */
+	height: 100%;
+	width: 50%;
+	white-space: normal;
+	vertical-align: top;
+	padding-left: 5%;
+	padding-top:15%;
+	zoom: 1.5;
+	line-height: 1.5;
+}
+
+.left h3{
+	width: 35%;
+	padding: 2%;
+	background-color: #68e1fd;
+	text-align: center;
+}
+
+.left p{
+	padding-top: 3%;
+	padding-bottom: 8%;
+	color: #546c72;
+}
+
+.right{
+	/* border: 1px solid black; */
+	height: 100vh;
+	width: 50%;
+	white-space: normal;
+}
+.hero{
+	padding-top: 10%;
+	width: 90%;
+	object-fit: contain;
+}
+
+/* ------------------ MAIN STYLING DOWN ------------------ */
+
+.down{
+	/* border: 1px solid black; */
+	background-color: #68e1fd;
+	width: 100%;
+	height: 100vh;
+	text-align: center;
+	white-space: normal;
+}
+
+.bottom-center{
+	background-color: white;
+	width: 60%;
+	height: 60%;
+	text-align: left;
+}
+
+.down h2{
+	padding-top: 4%;
+	margin-bottom: 2%;
+	zoom: 1.5;
+}
+
+.down p{
+	margin-left: 25%;
+	margin-bottom: 3%;
+	zoom: 1.3;
+	width: 50%;
+	line-height: 2;
+	color: #546c72;
+}
+
+.list{
+	margin-top: 13%;
+	margin-left: 17%;
+	line-height: 3;
+}
+
+.bottom-center img{
+	position: relative;
+	top: 5%;
+	left: 20%;
+	width: 30%;
+}
+
+.list h3{
+	zoom: 1;
+}
+
+.list h3::before{
+	content: url("../assets/svg/check-mark.svg");
+	position: relative;
+	top: 5px;
+	right: 10px;	
+}
+
+/* ------------------ MAIN STYLING DOWN ------------------ */
+
+footer {
+	/* border: 1px solid black; */
+	background-color: white;
+	height: 15vh;
+	margin-top: 50%;
+}
+
+footer p{
+	padding-top: 3%;
+	padding-left: 5%;
+	zoom: 1.2;
+}
+
+.social{
+	position: relative;
+	left: 80%;
+	margin-right: 5%;
+	margin-top: -1%;
+}
+
+.social i{
+	padding-left: 3%;
+}

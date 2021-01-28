@@ -1,0 +1,68 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: ;
+}
+
+body{
+  position: relative;
+  font-family: sans-serif;  
+  background-image:  linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5) ), url('./assets/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+fieldset{
+  border: none;
+}
+
+
+.sign-in{
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  /* border: 1px solid black; */
+  width: 20%;
+  height: 40%;
+  margin: auto;
+}
+
+legend{
+  width: 100%;
+  font-size: 2vw;
+  font-weight: bolder;
+  border-bottom: 5px solid #4caf50;
+  padding-bottom: 1vh;
+  color: white;
+}
+
+input{
+  margin-top: 10%;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 2px solid #4caf50;
+  width: 100%;
+  background: rgba(255,255,255,0);
+  height: 4vh;
+}
+
+button{
+  border: 2px solid #4caf50;
+  width: 100%;
+  margin-top: 10%;
+  background: rgba(255,255,255,0);
+  height: 4vh;
+  color: white;
+  border-radius: 5px;
+  font-size: large;
+}
+
+::-webkit-input-placeholder {
+  color: white;
+  font-weight: bold;
+  font-size: large;
+}
