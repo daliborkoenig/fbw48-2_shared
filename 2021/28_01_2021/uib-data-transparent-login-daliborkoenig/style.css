@@ -61,8 +61,25 @@ button{
   font-size: large;
 }
 
-::-webkit-input-placeholder {
+/* ::-webkit-input-placeholder {
   color: white;
   font-weight: bold;
   font-size: large;
+} */
+
+input::placeholder{
+  color: white;
+  font-size: large;
+}
+input:focus::placeholder {
+font-weight: bold;
+}
+
+input:focus{
+  outline: none;
+}
+
+button:focus{
+  outline: none;
+  border: 1px solid #4caf50;
 }
