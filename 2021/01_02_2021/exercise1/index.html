@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>exercise 1</title>
+</head>
+<body>
+
+  <main>
+    <form action="#" method="POST">
+      <ul>
+        <li>
+          <label for="name">name</label>
+          <input type="text" name="user-name" id="name" maxlength="20">
+        </li>
+        <li>
+          <label for="email">email</label>
+          <input type="email" name="email" id="email" placeholder="please enter your email" disabled>
+        </li>
+        <li>
+          <label for="msg">message</label>
+          <textarea name="msg" id="msg" cols="30" rows="5"></textarea>
+        </li>
+        <li>
+          <button type="submit">send your message</button>
+        </li>
+      </ul>
+    </form>
+
+    <form>
+      <label for="city-select">choose your city</label>
+      <select name="cities" id="city-select">
+        <option value="">--Please select city--</option>
+          <optgroup label="europe">
+            <option value="prague">prague</option>
+            <option value="madrid">madrid</option>
+            <option value="dublin">dublin</option>
+          </optgroup>
+          <optgroup label="asia">
+            <option value="seoul">seoul</option>
+            <option value="beijing">beijing</option>
+            <option value="kyoto">kyoto</option>
+          </optgroup>
+      </select>
+    </form>
+
+  </main>
+  
+</body>
+</html>

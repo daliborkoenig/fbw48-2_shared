@@ -1,0 +1,58 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+  background: linear-gradient(to right, rgb(146, 146, 146), rgb(224, 215, 165));
+}
+
+form{
+  margin: 5% auto;
+  width: 20%;
+  padding: 1rem;
+  border: 2px solid grey;
+  border-radius: 1rem;
+}
+
+ul{
+  list-style: none;
+}
+
+form li{
+  margin-top: 1rem;
+}
+
+label{
+  width: 7rem;
+  display: block;
+}
+
+input, textarea{
+  font: 1rem sans-serif;
+  border: 1px solid #ccc;
+}
+
+input:focus, textarea:focus{
+  background: #9acd32;
+}
+
+input[type="email"]:disabled{
+background-color: #ccc;
+}
+
+input::placeholder{
+  font-style: italic;
+}
+
+textarea{
+  vertical-align: top;
+  height: 4rem;
+}
+
+label[required]::after{
+  content: "*";
+  color: red;
+}
