@@ -1,0 +1,128 @@
+.periodic-table tbody tr:nth-child(1) td:nth-child(2),
+.periodic-table tbody tr:nth-child(3) td:nth-child(3),
+.periodic-table tbody tr:nth-child(4) td:nth-child(3){
+  background-color: white;
+}
+
+.periodic-table tbody tr:nth-child(1) td:nth-child(1),
+.periodic-table tbody tr:nth-child(3) td:nth-child(5),
+.periodic-table tbody tr:nth-child(3) td:nth-child(6),
+.periodic-table tbody tr:nth-child(3) td:nth-child(7),
+.periodic-table tbody tr:nth-child(4) td:nth-child(6),
+.periodic-table tbody tr:nth-child(4) td:nth-child(7),
+.periodic-table tbody tr:nth-child(5) td:nth-child(16){
+  background-color: #7e7e82;
+}
+
+.periodic-table tbody td:nth-child(1){
+  background-color: #f38300;
+}
+
+.periodic-table tbody td:nth-child(2){
+  background-color: #c71c16;
+}
+
+.periodic-table tbody tr:nth-child(-n+6):nth-child(n+5) td:nth-child(-n+12):nth-child(n+3),
+.periodic-table tbody tr:nth-child(-n+8):nth-child(n+5) td:nth-child(-n+12):nth-child(n+4){
+  background-color: #5e3d9d;
+}
+
+.periodic-table tbody tr:nth-child(7) td:nth-child(3){
+  background-color: #a33e9d;
+}
+.periodic-table tbody tr:nth-child(8) td:nth-child(3){
+  background-color: #ed500a;
+}
+
+.periodic-table tbody td:nth-child(4),
+.periodic-table tbody td:nth-child(13),
+.periodic-table tbody td:nth-child(14),
+.periodic-table tbody td:nth-child(15),
+.periodic-table tbody td:nth-child(16){
+  background-color: #1a6832;
+}
+
+.periodic-table tbody tr:nth-child(3) td:nth-child(4),
+.periodic-table tbody tr:nth-child(4) td:nth-child(5),
+.periodic-table tbody tr:nth-child(5) td:nth-child(14),
+.periodic-table tbody tr:nth-child(5) td:nth-child(15),
+.periodic-table tbody tr:nth-child(6) td:nth-child(15),
+.periodic-table tbody tr:nth-child(6) td:nth-child(16),
+.periodic-table tbody tr:nth-child(7) td:nth-child(16){
+  background-color: #50a736;
+}
+
+.periodic-table tbody td:nth-child(8),
+.periodic-table tbody td:nth-child(17){
+  background-color: #23adf7;
+}
+
+.periodic-table tbody td:nth-child(3),
+.periodic-table tbody td:nth-child(9),
+.periodic-table tbody td:nth-child(18){
+  background-color: #1974c3;
+}
+
+
+.periodic-table-two tbody tr:nth-child(1) td:nth-child(1),
+.periodic-table-two tbody tr:nth-child(2) td:nth-child(1),
+.periodic-table-two tbody tr:nth-child(1) td:nth-child(17),
+.periodic-table-two tbody tr:nth-child(2) td:nth-child(17){
+  background-color: white;
+}
+
+.periodic-table-two tbody tr:nth-child(-n+1):nth-child(n+1) td:nth-child(-n+16):nth-child(n+2){
+  background-color: #a33e9d;
+}
+
+.periodic-table-two tbody tr:nth-child(-n+2):nth-child(n+2) td:nth-child(-n+16):nth-child(n+2){
+  background-color: #ed500a;
+}
+
+.periodic-table-two tbody tr:nth-child(1) td:nth-child(1){
+  text-align: right;
+  font-size: 30px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  color: #a33e9d;
+}
+.periodic-table-two tbody tr:nth-child(2) td:nth-child(1){
+  text-align: right;
+  font-size: 30px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  color: #ed500a;
+}
+
+span:first-child:before{
+  background-color: #7e7e82;
+}
+span:nth-child(2):before{
+  background-color: #1a6832;
+}
+span:nth-child(3):before{
+  background-color: #1974c3;
+}
+span:nth-child(4):before{
+  background-color: #f38300;
+}
+span:nth-child(5):before{
+  background-color: #50a736;
+}
+span:nth-child(6):before{
+  background-color: #ed500a;
+}
+span:nth-child(7):before{
+  background-color: #c71c16;
+}
+span:nth-child(8):before{
+  background-color: #23adf7;
+}
+span:nth-child(9):before{
+  background-color: #a33e9d;
+}
+span:nth-child(10):before{
+  background-color: #5e3d9d;
+}
+
+
