@@ -1,0 +1,93 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+  text-align: center;
+}
+
+.main{
+  width: 80vw;
+  height: 50vh;
+  margin: auto;
+  /* border: 1px solid black; */
+}
+
+.component{
+  width: 100%;
+  height: 50%;
+  min-height: 20vh;
+  border: 1px solid black;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.f-item{
+  width: 15%;
+  height: 25%;
+  background-color: blue;
+  border: 1px solid red;
+}
+.d-flex-1{
+/* default value for direction is row */
+  flex-direction: row;
+}
+
+.d-flex-2{
+  flex-direction: row-reverse;
+}
+
+.d-flex-3{
+  flex-direction: column;
+}
+
+.d-flex-4{
+  flex-direction: column-reverse;
+}
+
+.d-flex-5{
+  /* flex-direction: column-reverse; */
+/* default value for wrap is nowrap */
+  flex-wrap: nowrap;
+}
+
+.d-flex-6{
+  /* flex-direction: column-reverse;
+  flex-wrap: wrap; */
+  /* we can use flexflow to use combine flex-direction and flex-wrap */
+  flex-flow: column wrap;
+}
+
+.d-flex-7{
+  justify-content: flex-start;
+}
+
+.d-flex-8{
+  justify-content: flex-end;
+}
+
+.d-flex-9{
+  justify-content: center;
+}
+
+.d-flex-10{
+  justify-content: space-between;
+}
+
+.d-flex-11{
+/* default value for align-items is flex-start */
+  align-items: flex-start;
+}
+
+.d-flex-12{
+  /* default value for align-items is flex-start */
+    align-items: flex-end;
+    justify-content: flex-end;
+}

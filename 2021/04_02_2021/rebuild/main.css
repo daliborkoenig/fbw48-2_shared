@@ -1,0 +1,136 @@
+main{
+  width: 100%;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ }
+
+.container-links{
+  /* border: 1px solid black; */
+  width: 60%;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+
+.link-main{
+  background-color: #fff;
+  border-radius: 10px;
+  /* border: 1px solid black; */
+  height: 100px;
+  width: 24%;
+  font-weight: bolder;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.fas, .far{
+  color: #657eea;
+}
+
+.container-articles-main{
+  /* border: 1px solid green; */
+  height: 70vh;
+  width: 60%;
+}
+
+.container-articles{
+  /* border: 1px solid red; */
+  height: 100%;
+  width: 75%;
+}
+
+.big-article{
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  background-image: url("./assets/hands.jpeg");
+  background-position: bottom;
+  background-size: cover;
+  height: 48%;
+  width: 99%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+.container-small{
+  /* border: 1px solid blue; */
+  width: 100%;
+  height: 50%;
+}
+
+.small-article{
+  border-radius: 10px;
+  /* border: 1px solid black; */
+  height: 48%;
+  width: 49%;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.small-article .img{
+  width: 30%;
+  height: 100%;
+  object-fit: cover;
+  padding: 2%;
+}
+
+.small-article .img img{
+  border-radius: 10px;
+  width:100%;
+  height: 100%;
+}
+
+.text{
+  width: 70%;
+  height: 100%;
+}
+
+.text h3{
+  padding: 5%;
+  color: black;
+}
+
+.minif{
+  padding: 5%;
+}
+
+.aside{
+  padding: 5%;
+  height: 70vh;
+  border-radius: 10px;
+  /* border: 1px solid black; */
+  width: 24%;
+  background-color: #edf2f7;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.button{
+  margin-left: 5%;
+  margin-top: 5%;
+  padding: 5%;
+  background-color: #e9d8fd;
+  border-radius: 10px;
+  width: 38%;
+  height: 20%;
+  display: inline-flex;
+  align-items: center; 
+  }
+
+div .minif p:nth-child(1){
+  font-weight: bolder;
+}
+
+li{
+  list-style-position: inside;
+}
+
+.button2{
+  color: #fff;
+  /* padding: 5%; */
+  padding-left: 12%;
+  background-color: #657eea;
+  border-radius: 30px;
+  width: 80%;
+  height: 8%;
+  display: inline-flex;
+  align-items: center; 
+  }
