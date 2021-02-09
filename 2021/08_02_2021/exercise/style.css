@@ -1,0 +1,101 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.flex-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item{
+  height: 20rem;
+  width: 20rem;
+  background-color: rgb(147, 147, 147);
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.one{
+  flex-shrink: 3;
+}
+
+.three{
+  /* If we want this item to grow bigger to fill some extra space left we use flex-grow */
+  flex-grow: 2;
+}
+
+.four{
+  order: -1;
+  /* flex-grow: 2;
+  flex-shrink: 2;
+  flex-basis: 30px; */
+  /* we can use flex to combine the 3 commands above grow/shrink/basis */
+  flex: 2 2 30px;
+}
+
+/* align self: this property specifies alignment for the select item in the flex container */
+
+.flex-container-2{
+  list-style: none;
+  display: flex;
+  height: 20rem;
+}
+
+.flex-item{
+  background-color: yellowgreen;
+  padding: 5px;
+  width: 10rem;
+  margin: 5px;
+  line-height: 10rem;
+  color: aliceblue;
+  font-size: 2em;
+  text-align: center;
+}
+
+.flex-start{
+  align-self: flex-start;
+}
+
+.flex-end{
+  align-self: flex-end;
+}
+
+.center{
+  align-self: center;
+}
+
+.baseline{
+  align-self: baseline;
+}
+
+.stretch{
+  align-self: stretch;
+}
+
+@media (max-width: 800px){
+  .flex-container{
+    flex-direction: column;
+  }
+
+  .item{
+    background-color: aqua;
+  }
+
+  .flex-container-2{
+    flex-direction: column;
+  }
+
+  .flex-item{
+    background-color: hotpink;
+  }
+}
