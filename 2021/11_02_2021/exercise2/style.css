@@ -1,0 +1,45 @@
+.header{
+  width: 100vw;
+  background: #ddd;
+  height: 80px;
+}
+.navbar > div{
+  border: 1px solid black;
+}
+.navbar{
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.navbar-items{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navbar-items > div:hover{
+  color: gray;
+}
+
+.bars{
+  display: none;
+}
+
+@media all and (max-width: 665px){
+  .navbar-items{
+    display: none;
+  }
+  .bars{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
+    }
+}
