@@ -1,0 +1,88 @@
+:root{
+  font-size: 62.5%;
+}
+
+body{
+  font-size: 1.8rem;
+  font-family: sans-serif;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 2.5fr 1.5fr 1fr;
+  grid-template-areas: 
+  "header header header header"
+  "main main main aside-one"
+  "aside-two section section aside-one"
+  "footer footer footer footer";
+  gap: 2rem;
+  padding: 1rem;
+}
+
+header{
+  grid-area: header;
+  background-color: #fcfcce;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 1rem 0 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+nav{
+  width: 50%;
+  background-color: #e3d2c6;
+  height: 120%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 20px;
+}
+
+
+nav a{
+  text-decoration: none;
+}
+
+
+main{
+  grid-area: main;
+  background-color: #fee29f;
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+.aside-one{
+  grid-area: aside-one;
+  background-color: #90ef90;
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+.aside-two{
+  grid-area: aside-two;
+  background-color: #90ef90;
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+section{
+  grid-area: section;
+  background-color: #ff00ff;
+  border-radius: 20px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+justify-content: center;}
+
+footer{
+  grid-area: footer;
+  background-color: #e4d4de;
+  border-radius: 20px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
