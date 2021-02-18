@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+:root {
+  font-size: 62.5%;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+body{
+  background-color: whitesmoke;
+  font-size: 1.8rem;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.3;
+}
+
+/* --------------- HEADER START --------------- */
+
+.header{
+  position: relative;
+  width: 100vw;
+  min-height: 80px;
+}
+.navbar{
+  height: 80px;
+  background-color: white;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.26);
+}
+.small-devices{
+  grid-template-columns: 1fr 2fr 1fr;
+}
+.menu{
+  padding-left: 10px;
+  align-items: center;
+}
+.logo{
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+}
+.login{
+  align-items: center;
+  justify-content: center;
+}
+
+.side-navbar{
+  position: absolute;
+  text-align: center;
+  width: 80vw;
+  height: 23vh;
+  background-color: rgb(221, 221, 221);
+  top: 81px;
+  left: -100vw;
+  transition: all 1s ease-in-out;
+  border-right:  1px solid rgba(128, 128, 128, 0.26);
+  border-bottom:  1px solid rgba(128, 128, 128, 0.26);
+}
+#menu-input:checked ~ .side-navbar{
+  left: 0;
+}
+#menu-input{
+  display: none;
+}
+
+.menu-icon{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "icon";
+  justify-content: center;
+  align-items: center;
+}
+.bars{
+  grid-area: icon;
+  transition: all 0.2 ease-in-out;
+}
+.times{
+  grid-area: icon;
+  color: transparent;
+  transition: all 0.2 ease-in-out;
+}
+
+#menu-input:checked ~ .menu-icon .bars{
+  color: transparent;
+}
+
+#menu-input:checked ~ .menu-icon .times{
+  color: red;
+  zoom: 1.2;
+}
+.side-navbar > div:nth-child(even){
+  background-color: #eee;
+}
+
+.side-navbar > div{
+  padding: 5px 5px 5px 5px;
+}
+
+.large-devices{
+  display: none;
+}
+
+.blog-items > div:nth-child(even){
+  background-color: #eee;
+}
+
+.blog-items > div:nth-child(odd){
+  background-color: #ddd;
+}
+
+/* --------------- HEADER END --------------- */

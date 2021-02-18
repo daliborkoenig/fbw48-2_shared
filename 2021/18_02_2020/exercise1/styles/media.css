@@ -1,0 +1,76 @@
+/* Code for ..small devices (landscape phones, 576px and up).. goes here */
+@media (min-width: 576px) {  }
+
+/* Code for ..Medium devices (tablets, 768px and up).. goes here */
+@media (min-width: 768px) {   
+  .small-devices{
+    display: none;
+  }
+  .large-devices{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 80px;
+    align-items: center;
+    cursor: pointer;
+  } 
+  .navbar-items{
+    justify-content: space-around;
+  }
+
+  .blog{
+    position: relative;
+  }
+
+  .blog-items{
+    position: absolute;
+    top: 90px;
+    left: -80px;
+    background-color: #ddd;
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    display: none;
+  }
+
+  .blog-items > div{
+    padding: 5px;
+    transition: all 0.2s ease-in-out;
+  }
+  .blog-items > div:hover{
+    transform: scale(1.2);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .blog:hover .blog-items{
+    display: block;
+  }  
+  
+  .blog-items:hover{
+    display: block;
+  }
+  
+  .navbar-items > div{
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+
+  .blog-items > div:nth-child(even){
+    background-color: #eee;
+  }
+  
+  .blog-items > div:nth-child(odd){
+    background-color: #ddd;
+  }
+  
+}
+
+/* Code for ..Large devices (desktops, 992px and up).. goes here */
+@media (min-width: 992px) { 
+
+}
+
+/* Code for ..X-Large devices (large desktops, 1200px and up).. goes here */
+@media (min-width: 1200px) {  }
+
+/* Code for ..XX-Large devices (larger desktops, 1400px and up).. goes here */
+@media (min-width: 1400px) {  }
