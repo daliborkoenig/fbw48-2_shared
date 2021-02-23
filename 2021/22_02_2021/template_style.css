@@ -1,0 +1,38 @@
+:root {
+  font-size: 62.5%;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+body{
+  font-size: 1.8rem;
+}
+
+/* Code for ..small devices (landscape phones, 576px and up).. goes here */
+@media (min-width: 576px) {
+
+}
+
+/* Code for ..Medium devices (tablets, 768px and up).. goes here */
+@media (min-width: 768px) {
+
+}
+
+/* Code for ..Large devices (desktops, 992px and up).. goes here */
+@media (min-width: 992px) {
+
+}
+
+/* Code for ..X-Large devices (large desktops, 1200px and up).. goes here */
+@media (min-width: 1200px) {
+
+}
+
+/* Code for ..XX-Large devices (larger desktops, 1400px and up).. goes here */
+@media (min-width: 1400px) {
+
+}
