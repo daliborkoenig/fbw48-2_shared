@@ -1,0 +1,79 @@
+@use "./variables";
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin hide {
+  display: none;
+}
+
+@mixin triangle($position: "up", $color: red) {
+  width: 100px;
+  height: 100px;
+  background-color: $color;
+  @if $position == "up" {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+  @else if $position == "down" {
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+  }
+  @else if $position == "right" {
+    clip-path: polygon(0 100%, 0 0, 100% 50%);
+  }
+  @else if $position == "left" {
+    clip-path: polygon(100% 100%, 100% 0, 0 50%);
+  }
+}
+
+// @mixin keyframe-fadeIn {
+//   @keyframes fadeIn {0%   { opacity:0; }
+//   100% { opacity:1; }}
+// }
+
+// @mixin fadeIn( $arg ) {
+//   $keyframe-name:fadeIn;
+//   $duration:$arg;
+//   @each $p in $prefix {
+//     #{$p}animation:$keyframe-name $duration;
+//   }
+// }
+
+
+
+@mixin font-size($fs) {
+  @if fs == "xs" {
+    font-size: 12px;
+  }
+  @else if $fs == "sm" {
+    font-size: 14px;
+  }
+  @else if $fs == "m" {
+    font-size: 16px;
+  }
+  @else if $fs == "l" {
+    font-size: 32px;
+  }
+  @else if $fs == "xl" {
+    font-size: 48px;
+  }
+  @else if $fs == "xxl" {
+    font-size: 61px;
+  }
+}
+
+@function font-size($font-size){
+  @warn "This font size does not exist";
+  @return $font-size;
+}
+
+
+

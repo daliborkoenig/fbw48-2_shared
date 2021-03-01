@@ -1,0 +1,36 @@
+@use "./variables" as var;
+@use "./mixins" as mix;
+
+ul {
+  @include mix.reset-list;
+}
+
+.center{
+  @include mix.center;
+}
+
+.hide {
+  @include mix.hide;
+}
+
+.div{
+  @include mix.triangle(left, yellow);
+}
+
+// @keyframes fadeIn {
+//   @include mix.keyframe-fadeIn;
+// }
+
+.size-sm{
+  @include mix.font-size(xs);
+}
+
+.size-xxl{
+  @include mix.font-size(xxl);
+}
+
+.div-3{
+  font-size: font-size(xxl);
+}
+
+
