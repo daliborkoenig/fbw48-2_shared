@@ -70,9 +70,29 @@
   }
 }
 
-@function font-size($font-size){
-  @warn "This font size does not exist";
-  @return $font-size;
+$font-sizes: (
+    xs: 12px,
+    sm: 14px,
+    m: 16px,
+    l: 32px,
+    xl: 48px,
+    xxl: 61px
+);
+
+@mixin font-size($size) {
+    @if map-has-key($font-sizes, $size) {
+        font-size: map-get($font-sizes, $size);
+    } @else {
+        @error '#{$size} is not defined. Use #{$font-sizes}';
+    }
+}
+
+@function font-size($size) {
+    @if map-has-key($font-sizes, $size) {
+        @return map-get($font-sizes, $size);
+    } @else {
+        @error '#{$size} is not defined. Use #{$font-sizes}';
+    }
 }
 
 
