@@ -1,0 +1,80 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.inline{
+  display: inline-block;
+}
+
+body{
+  background: linear-gradient(to right, rgb(255, 184, 200), rgb(173, 215, 232));
+  font-family: sans-serif;
+
+}
+
+.form-container{
+  margin: 5% auto;
+  width: 90%;
+  background-color: white;
+  padding: 2%;
+  border-radius: 5px;
+}
+
+.first-name, .last-name{
+  padding-top: 1vh;
+}
+
+.email, .message{
+  padding-top: 2vh;
+}
+
+label{
+  /* display: block; */
+  padding-top: 1vh;
+}
+
+h1{
+  text-align: center;
+}
+
+input{
+  width: 100%;
+  height: 3vh;
+}
+
+textarea{
+  width: 100%;
+  height: 10vh;
+}
+
+.toggle{
+  text-align: center;
+  vertical-align: middle;
+}
+
+button{
+  position: relative;
+  left: 45%;
+  width: 10%;
+  height: 3vh;
+  border-radius: 0;
+  border: 1px solid grey;
+  background: white;
+  color: grey;
+}
+
+input[type="text"]:focus{
+  outline: none !important;
+  border: 1px solid pink;
+}
+
+input[type="email"]:focus, textarea:focus{
+  outline: none !important;
+  border: 1px solid blue;
+}
+
+.toggle p{
+  padding: 1vh;
+height: 4vh;}
