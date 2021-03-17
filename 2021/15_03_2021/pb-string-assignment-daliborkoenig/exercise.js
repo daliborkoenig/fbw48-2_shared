@@ -22,3 +22,19 @@ console.log(hipsum1.length == hipsum2.length);
 // 4
 let hipsum3 = 'I am baby pork belly gochujang duis flannel yuccie poutine.'
 console.log(hipsum3.substring(1));
+
+let newone = null
+
+if (typeof newone == 'string') {
+  console.log('string string');
+}
+else if (typeof newone == 'number') {
+  console.log('number number');
+}
+else if (typeof newone == 'undefined') {
+  console.log('undefined undefined');
+}
+else {
+  console.log('null null');
+}
+

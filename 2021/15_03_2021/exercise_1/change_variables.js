@@ -13,3 +13,4 @@ x++ //increase by 1
 x *= 2 //multiply by 2
 
 console.log(x);
+
