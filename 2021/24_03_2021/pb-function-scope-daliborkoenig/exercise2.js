@@ -1,9 +1,10 @@
+
 // 1
 function exponential(a,b){
   if (typeof a == 'number' && typeof b == 'number'){
     let exp = '';
     for (let i = 1; i <= b; i++) {
-      exp += i + " ";
+      exp += Math.pow(a,i) + " ";
     }
     console.log(exp);
   }
@@ -29,5 +30,3 @@ function exponent(a,b){
   return result
 }
 console.log(exponent(2,3));
-
-console.log(typeof(5));
