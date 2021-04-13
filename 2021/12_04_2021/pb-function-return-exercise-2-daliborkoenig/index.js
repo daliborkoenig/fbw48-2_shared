@@ -28,6 +28,6 @@ console.log(`2==> ${makeid(8)}`);
 // 3
 // Write a JavaScript program to pass a 'JavaScript function' as parameter.
 function abc() {
-  console.log(`3==> ${abc.name}`);
+  console.log(`3==> ${arguments.callee.name}`);
 }
 abc();
