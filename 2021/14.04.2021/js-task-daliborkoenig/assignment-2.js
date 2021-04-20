@@ -36,7 +36,7 @@ function checkNames(names,searchValue){
   let count = 0
   if (Array.isArray(names)){
     for(i=0;i<names.length;i++){
-      if (names[i]==searchValue){
+      if (names[i]!==searchValue){
         continue
       }
       count++

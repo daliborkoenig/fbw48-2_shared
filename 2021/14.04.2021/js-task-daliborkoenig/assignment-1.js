@@ -33,18 +33,32 @@ const sampleData = [24,0,61,60,24,27,11,47,94,22,60,72,15,65,29,78,11,59,99,30,3
 
 function checkArray(numbers, threshold){
   let newArr = []
-  if (Array.isArray(numbers)){
-    for(i=0;i<numbers.length;i++){
-      if (numbers[i]<=threshold){
-        continue
+  for (i=0;i<numbers.length;i++){
+    if (Array.isArray(numbers) && typeof numbers[i] == "number"){
+      for(i=0;i<numbers.length;i++){
+        if (numbers[i]<=threshold){
+          continue
+        }
+        newArr.push(numbers[i])
       }
-      newArr.push(numbers[i])
+      return newArr
     }
-    return newArr
+    else {
+      return undefined
+    }
   }
-  else {
-    return undefined
-  }
+  // if (Array.isArray(numbers)){
+  //   for(i=0;i<numbers.length;i++){
+  //     if (numbers[i]<=threshold){
+  //       continue
+  //     }
+  //     newArr.push(numbers[i])
+  //   }
+  //   return newArr
+  // }
+  // else {
+  //   return undefined
+  // }
 }
 
 console.log(checkArray(sampleData,40));
