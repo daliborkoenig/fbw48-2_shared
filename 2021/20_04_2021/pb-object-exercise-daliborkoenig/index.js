@@ -50,10 +50,10 @@ let books = [
 
 for (let book of books) {
   // console.log(`${book.title} by ${book.author}`);
-  if (book.alreadyRead == true){
+  if (book.alreadyRead){
     console.log(`You already read "${book.title}" by ${book.author}`); 
   }
   else {
-    console.log(`You still neeed to read "${book.title}" by ${book.author}`)
+    console.log(`You still need to read "${book.title}" by ${book.author}`)
   }
 }

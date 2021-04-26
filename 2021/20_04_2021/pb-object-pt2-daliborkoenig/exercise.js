@@ -81,19 +81,22 @@ programming.languages.push("Go")
 programming.difficulty = 7
 delete programming.jokes
 programming.isFun = true
-console.log(programming);
+console.log("6 ==> ",programming);
 for (i=0;i<programming.languages.length;i++){
-  console.log(programming.languages[i]);
+  console.log("6 ==> ",programming.languages[i]);
 }
 for(key in programming){
-  console.log(key);
+  console.log("6 ==> ",key);
 }
 for(key in programming){
-  console.log(programming[key]);
+  console.log("6 ==> ",programming[key]);
 }
 
 
-if (programming.isChallenging == true && programming.isRewarding == true){
-  console.log(`Learning the programming languages: "${programming.languages}" is rewarding and challenging`);
+programming.message = function() {
+  if (programming.isChallenging && programming.isRewarding){
+  return "6 ==> ",`Learning the programming languages: "${this.languages}" is rewarding and challenging`;
+  }
 }
 
+console.log(programming.message());
