@@ -1,16 +1,16 @@
 // Write the function camelize(str) that changes dash-separated words like “my-short-string” into camel-cased “myShortString”.
 //1
-// function camelize(str) {
-//  //write your code here
-//   let words = str.split("-")
-//   if(words[0].length == 0){
-//     words.shift()
-//   }
-//   for (let i = 1; i < words.length; i++) {
-//     words[i] = words[i].charAt(0).toUpperCase()+words[i].substr(1)
-//   }
-//   return words.join("")
-// }
+function camelize(str) {
+ //write your code here
+  let words = str.split("-")
+  if(words[0].length == 0){
+    words.shift()
+  }
+  for (let i = 1; i < words.length; i++) {
+    words[i] = words[i].charAt(0).toUpperCase()+words[i].substr(1)
+  }
+  return words.join("")
+}
 
 // function camelize(str) {
 //   //write your code here
@@ -23,17 +23,17 @@
 //  return str.split("-")[0]+capiWords.join("")
 // }
 
-function camelize(str) {
-  //write your code here
-  str = str.toLowerCase()
-  string = str
-  for (i=0; i<str.length;i++){
-    if (string[i]=="-"){
-      string[i+1] = string[i+1].toUpperCase()
-    } 
-  }
-  return str
-}
+// function camelize(str) {
+//   //write your code here
+//   str = str.toLowerCase()
+//   string = str
+//   for (i=0; i<str.length;i++){
+//     if (string[i]=="-"){
+//       string[i+1] = string[i+1].toUpperCase()
+//     } 
+//   }
+//   return str
+// }
 
 
 
@@ -58,7 +58,9 @@ let usersMapped = users.map(function(item){
   return obj
 })
 
-// console.log(usersMapped);
+console.log(usersMapped);
+
+
 //write your code here
 
 /*   usersMapped = [
