@@ -61,3 +61,31 @@ console.log(myObject);
 // }
 // console.log(variables);
 
+
+let person = {
+  id:33,
+  name2:"someName",
+  age2:102
+}
+
+let { id,name2:firstName,age2} = person
+
+console.log(id, firstName, age2);
+
+let prices = [
+  {
+    id:3,
+  price: "100"
+},
+{
+  id:4,
+  price:"200"
+},
+{
+  id:5,
+  price: "300"
+}
+]
+
+let[val2,val1,val3] = prices
+console.log(val1.price);
