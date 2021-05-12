@@ -16,7 +16,7 @@ class CoffeeShop {
 			console.log(`Your order of ${name} has been taken succesfully.`);
 		}
 		else {
-			console.log(`This item is currently unavailable!`);
+			console.log(`We don't have ${name} on our menu!`);
 		}
 	}
 	fullFillOrder(){
@@ -62,6 +62,7 @@ class CoffeeShop {
 				arr.push(item.item)
 			}
 		}
+
 		console.log(`These are the drink items on the menu: ${arr}`);
 	}
 	foodOnly(){
@@ -79,7 +80,7 @@ let items = [{item: "coffee", type: "drink", price: 5},{item: "tea", type: "drin
 
 let tsc = new CoffeeShop("CoffeeShop", items)
 
-tsc.addOrder("coffee")
+tsc.addOrder("steak")
 tsc.addOrder("tea")
 tsc.addOrder("tea")
 tsc.addOrder("sandwich")

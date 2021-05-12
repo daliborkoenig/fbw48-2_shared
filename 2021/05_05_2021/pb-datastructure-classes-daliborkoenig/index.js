@@ -16,60 +16,127 @@ class Cylinder{
   constructor(r,h){
     this.radius = r
     this.height = h
-    this.volume = (Math.PI*r*h).toFixed(4)
+    this.vol = (Math.PI*r*h).toFixed(4)
+  }
+  volume(){
+    return this.vol
   }
 }
 
 let cyl = new Cylinder (10,5)
-console.log(cyl);
+console.log(`The volume of the cylinder is ${cyl.volume()} something something`);
 
 // 3.
+// class Clock{
+//   constructor(obj){
+//     this.template = obj.template.split(":")
+//     this.time
+//   }
+//   render() {
+//     let time = []
+//     let date = new Date();
+
+//     let hours = date.getHours();
+//     if (hours < 10) hours = '0' + hours;
+
+//     let mins = date.getMinutes();
+//     if (mins < 10) mins = '0' + mins;
+
+//     let secs = date.getSeconds();
+//     if (secs < 10) secs = '0' + secs;
+
+//     time = this.template
+//     for (let i=0 ; i<=time.length ; i++){
+//       if (time[i] == "h"){
+//         time[i] = hours
+//       }
+//       if (time[i] == "m"){
+//         time[i] = mins
+//       }
+//       if (time[i] == "s"){
+//         time[i] = secs
+//       }
+//     }
+ 
+//     console.log("time is:"+time[0]+":"+time[1]+":"+time[2]);
+//     // console.log("time is:"+hours+":"+mins+":"+secs);
+//   }
+
+//   stop() {
+//     clearInterval(this.timer);
+//   };
+
+//   start() {
+//     this.render();
+//     function output(){
+//       this.render()
+//     }
+//     this.timer = setInterval(output, 1000);
+//   };
+
+// }
+
+// let clock = new Clock({template: 'h:m:s'});
+// clock.start();
+// clock.stop()
+// clock.start();
+
 class Clock{
   constructor(obj){
     this.template = obj.template
+    this.timer
   }
   render() {
+    let time = []
     let date = new Date();
-
     let hours = date.getHours();
     if (hours < 10) hours = '0' + hours;
-
     let mins = date.getMinutes();
     if (mins < 10) mins = '0' + mins;
-
     let secs = date.getSeconds();
     if (secs < 10) secs = '0' + secs;
-
-    this.time = this.template.split(":")
-    for (let i=0 ; i<=this.time.length ; i++){
-      if (this.time[i] == "h"){
-        this.time[i] = hours
-      }
-      if (this.time[i] == "m"){
-        this.time[i] = mins
-      }
-      if (this.time[i] == "s"){
-        this.time[i] = secs
-      }
-    }
- 
-    console.log("time is:"+this.time[0]+":"+this.time[1]+":"+this.time[2]);
+     console.log(this.template);
+  //    time = this.template
+  //    for (let i=0 ; i<=time.length ; i++){
+  //      if (time[i] == "h"){
+  //        time[i] = hours
+  //      }
+  //      if (time[i] == "m"){
+  //        time[i] = mins
+  //      }
+  //      if (time[i] == "s"){
+  //        time[i] = secs
+  //      }
+  //    }
+  //    console.log("time is:"+time[0]+":"+time[1]+":"+time[2]);
+  let output = this.template
+    .replace("h", hours)
+    .replace("m", mins)
+    .replace("s", secs)
+    .replace("h", hours)
+    .replace("m", mins)
+    .replace("s", secs)
+    .replace("h", hours)
+    .replace("m", mins)
+    .replace("s", secs);
+  console.log(output);
   }
-
-  stop = function() {
+  stop() {
     clearInterval(this.timer);
   };
-
-  start = function() {
+  start() {
     this.render();
-    this.timer = setInterval(this.render, 1000);
+    const again = () =>{
+        this.render()
+    }
+    this.timer = setInterval(again, 1000);
   };
-
 }
-
 let clock = new Clock({template: 'h:m:s'});
 clock.start();
 clock.stop()
+// clock.start();
+
 
 // 4.
 class TV{
@@ -92,8 +159,11 @@ class TV{
     }
   }
   decreaseVolume(num){
-    if (num === undefined){
+    if (num === undefined ){
       console.log(`${this.brand} says: You need to let me know by how much dummy!`)
+    }
+    if (typeof num == "string"){
+      console.log(`${this.brand} says: Not sure if you know whyt a number is, but this is not it, dummy!`)
     }
     if (this.volume - num < 0){
       this.volume = 0
