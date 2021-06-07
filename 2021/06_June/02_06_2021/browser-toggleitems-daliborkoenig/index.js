@@ -23,7 +23,6 @@ const title = document.createElement("h1")
 title.id = "title"
 title.textContent = "My Favourite Destinations"
 title.style.textAlign = "center"
-// title.style.width = "80%"
 title.style.marginLeft = "10%"
 
 
@@ -34,19 +33,24 @@ explain.style.color = "#0D7FF7"
 explain.style.backgroundColor = "#CEE4FE"
 explain.style.padding = "25px"
 explain.style.borderRadius = "5px"
-// explain.style.width = "77.5%"
-// explain.style.marginLeft = "10%"
-
 
 const list = document.createElement("ul")
 list.id = "list"
-// list.style.width = "80%"
 list.style.listStyle = "none"
 list.style.paddingLeft = "0px"
 list.style.borderRadius = "5px"
 list.style.border = "1px solid grey"
-// list.style.marginLeft = "10%"
 list.style.display = "none"
+
+const selection = document.createElement("p")
+selection.id = "selection"
+selection.textContent = "You selected "
+selection.style.padding = "25px"
+selection.style.borderRadius = "5px" 
+selection.style.color = "green"
+selection.style.backgroundColor = "lightgreen"
+selection.style.fontSize = "1.1em"
+selection.style.display = "none"
 
 const button = document.createElement("button")
 button.id = "button"
@@ -62,7 +66,7 @@ button.style.fontSize = "1.1em"
 
 
 body.append(main);
-main.append(title,explain,list,button);
+main.append(title,explain,list,selection,button);
 
 const favourite = ["Rome", "Athens",
 "Bangkok", "Amsterdam", "Cala Gonone"]
@@ -71,7 +75,6 @@ for (let i = 0; i < 5; i++) {
   let listItem = document.createElement("li")
   listItem.textContent = favourite[i]
   listItem.style.padding = "25px"
-  // listItem.style.borderRadius = "5px" 
   listItem.style.borderBottom = "1px solid grey" 
   list.appendChild(listItem)
 }
@@ -86,7 +89,11 @@ listItems.forEach(element => {
     element.style.backgroundColor = "white"
     element.style.color = "black"
   })
-  console.log(element);
+  element.addEventListener('click',(e)=>{
+    selection.style.display = "block"
+    console.log(e.target.textContent);
+    selection.textContent = `You have selected ${e.target.textContent}`
+  })
 });
 
 function buttonFunction(e){
