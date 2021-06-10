@@ -1,4 +1,4 @@
-let wrapper = document.getElementById("wrapper")
+let wrapper = document.querySelector("#wrapper")
 console.log("wrapper.children list :");
 console.log(wrapper.children);
 Array.from(wrapper.children).forEach(element => {

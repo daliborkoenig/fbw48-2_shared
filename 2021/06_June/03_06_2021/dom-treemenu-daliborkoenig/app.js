@@ -1,12 +1,12 @@
-const tree = document.querySelector(".tree")
+const tree = document.querySelector("#tree")
 // console.log(tree);
 const list = document.querySelectorAll("li")
-for (li of list){
-  let span = document.createElement("span")
-  console.log(li);
-  li.prepend(span);
-  span.append(span.nextSibling)
-}
+// for (li of list){
+//   let span = document.createElement("span")
+//   // console.log(li);
+//   li.prepend(span);
+//   span.append(span.nextSibling)
+// }
 // console.log(li);
 
 
@@ -24,12 +24,13 @@ for (li of list){
 
 const all = tree.getElementsByTagName("*");
 tree.addEventListener("click", (e)=>{
+  console.log(e.target.children);
   if(typeof e.target.children[0] === "undefined"){
   }
-  else if(e.target.children[0].style.display == "none"){
+  if(e.target.children[0].style.display == "none"){
     e.target.children[0].style.display = "block"
   }
-  else if(e.target.children.length == 1){
+  if(e.target.children.length == 1){
     e.target.children[0].style.display = "none"
   }
   else{
