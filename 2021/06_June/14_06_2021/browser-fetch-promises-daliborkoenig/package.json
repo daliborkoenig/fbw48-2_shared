@@ -1,0 +1,18 @@
+{
+  "name": "promise-parcel",
+  "version": "1.0.0",
+  "description": "**Instructions**: Create a promise that, once resolved, displays a modal to the user after the user spends 60seconds on the page. Use the `index.html` and `main.scss` as your starting files.",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel ./src/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.0.0-beta.2"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.0-beta.2"
+  }
+}

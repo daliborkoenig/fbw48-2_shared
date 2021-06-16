@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    background-color: lightblue;
+    width: 100vw;
+    height: 100vh;
+}
+
+.froggy {
+    position: absolute;
+}
+
+.froggy .froggy-speak {
+    position: relative;
+    left: 100px;
+    top: 5px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 5px 5px 0px -1px #AAAAAA;
+    visibility: hidden;
+}
+
+.froggy .froggy-sprite {
+    background-image: url("../images/froggy.png");
+    width: 100px;
+    height: 80px;
+    background-size: cover;
+}
+
+.froggy .froggy-contextmenu {
+    display: none;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}

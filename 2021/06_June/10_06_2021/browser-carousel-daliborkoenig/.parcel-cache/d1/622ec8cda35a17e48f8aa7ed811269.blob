@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="wrapper">
+    <div id="left">
+      <i class="fas fa-angle-left"></i>
+    </div>
+    <div id="right">
+      <i class="fas fa-angle-right"></i>
+    </div>
+
+    <div id="imgContainer">
+      <img class="leftImg img" src="24b21208c1893f5fd07645c61e23e110">
+      <img class="centerImg img" src="a37f5c7b83c5179142fc33e93d859348">
+      <img class="rightImg img" src="b000934eb979588811112237d3cf3de9">
+    </div>
+    <div id="dots">
+   
+    </div>
+  </div>
+
+  <script src="23c64250a685a2dd53313260c05339c6"></script>
+</body>
+</html>

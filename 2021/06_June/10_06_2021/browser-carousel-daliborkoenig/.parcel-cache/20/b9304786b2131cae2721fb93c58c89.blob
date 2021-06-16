@@ -1,0 +1,158 @@
+require('@fortawesome/fontawesome-free/css/all.css');
+require('./style.scss');
+var _imagesJpg = require('./images/*.jpg');
+var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+var _imagesJpgDefault = _parcelHelpers.interopDefault(_imagesJpg);
+var _animejsLibAnimeEsJs = require('animejs/lib/anime.es.js');
+var _animejsLibAnimeEsJsDefault = _parcelHelpers.interopDefault(_animejsLibAnimeEsJs);
+// automatic image database creation dependant on the number selected
+// images must be in "images" folder and must be numbered as "image-1, image-2"
+// vanilla js
+const images = [];
+class Image {
+  constructor(imgSrc, imgName) {
+    this.src = imgSrc;
+    this.name = imgName;
+  }
+  addImage() {
+    images.push({
+      imgSrc: this.src,
+      imgName: this.name
+    });
+  }
+}
+// choose how many images to add to database
+let numOfImages = 10;
+for (let i = 1; i <= numOfImages; i++) {
+  let image = new Image(`./images/image-${i}.jpg`, `image-${i}`);
+  image.addImage();
+}
+const dots = document.querySelector("#dots");
+for (let i = 0; i < Object.keys(_imagesJpgDefault.default).length; i++) {
+  const dot = document.createElement("i");
+  dot.className = "fas fa-dot-circle";
+  dots.appendChild(dot);
+}
+const dotsAll = dots.querySelectorAll("i");
+dotsAll[0].style.color = "rgba(255,255,255,0.8)";
+let image = 1;
+left.onclick = function () {
+  const leftImg = document.querySelector(".leftImg");
+  const centerImg = document.querySelector(".centerImg");
+  const rightImg = document.querySelector(".rightImg");
+  if (centerImg.src.includes("image-1") && !centerImg.src.includes("image-10")) {
+    _animejsLibAnimeEsJsDefault.default({
+      targets: ".img",
+      translateX: 20,
+      duration: 200,
+      direction: "alternate",
+      easing: 'easeInOutSine'
+    });
+  } else if (centerImg.src.includes("image-10")) {
+    _animejsLibAnimeEsJsDefault.default({
+      targets: ".img",
+      translateX: 800,
+      duration: 2000,
+      easing: 'easeInOutSine',
+      complete: function (anim) {
+        leftImg.src = _imagesJpgDefault.default[`image-${image - 2}`];
+        leftImg.className = "leftImg img";
+        centerImg.src = _imagesJpgDefault.default[`image-${image - 1}`];
+        centerImg.className = "centerImg img";
+        rightImg.src = _imagesJpgDefault.default[`image-${image}`];
+        rightImg.className = "rightImg img";
+        image -= 1;
+        dotsAll[image].style.color = "rgba(255,255,255,0.4)";
+        dotsAll[image - 1].style.color = "rgba(255,255,255,0.8)";
+        _animejsLibAnimeEsJsDefault.default({
+          targets: ".img",
+          translateX: 0,
+          duration: 0
+        });
+      }
+    });
+  } else {
+    _animejsLibAnimeEsJsDefault.default({
+      targets: ".img",
+      translateX: 800,
+      duration: 2000,
+      easing: 'easeInOutSine',
+      complete: function (anim) {
+        leftImg.src = _imagesJpgDefault.default[`image-${image - 2}`];
+        leftImg.className = "leftImg img";
+        centerImg.src = _imagesJpgDefault.default[`image-${image - 1}`];
+        centerImg.className = "centerImg img";
+        rightImg.src = _imagesJpgDefault.default[`image-${image}`];
+        rightImg.className = "rightImg img";
+        image -= 1;
+        dotsAll[image].style.color = "rgba(255,255,255,0.4)";
+        dotsAll[image - 1].style.color = "rgba(255,255,255,0.8)";
+        _animejsLibAnimeEsJsDefault.default({
+          targets: ".img",
+          translateX: 0,
+          duration: 0
+        });
+      }
+    });
+  }
+};
+right.onclick = () => {
+  const leftImg = document.querySelector(".leftImg");
+  const centerImg = document.querySelector(".centerImg");
+  const rightImg = document.querySelector(".rightImg");
+  if (centerImg.src.includes("image-10")) {
+    _animejsLibAnimeEsJsDefault.default({
+      targets: ".img",
+      translateX: -20,
+      duration: 200,
+      direction: "alternate",
+      easing: 'easeInOutSine'
+    });
+  } else if (centerImg.src.includes("image-1")) {
+    _animejsLibAnimeEsJsDefault.default({
+      targets: ".img",
+      translateX: -800,
+      duration: 2000,
+      easing: 'easeInOutSine',
+      complete: function (anim) {
+        leftImg.src = _imagesJpgDefault.default[`image-${image}`];
+        leftImg.className = "leftImg img";
+        centerImg.src = _imagesJpgDefault.default[`image-${image + 1}`];
+        centerImg.className = "centerImg img";
+        rightImg.src = _imagesJpgDefault.default[`image-${image + 2}`];
+        rightImg.className = "rightImg img";
+        dotsAll[image - 1].style.color = "rgba(255,255,255,0.4)";
+        dotsAll[image].style.color = "rgba(255,255,255,0.8)";
+        image += 1;
+        _animejsLibAnimeEsJsDefault.default({
+          targets: ".img",
+          translateX: 0,
+          duration: 0
+        });
+      }
+    });
+  } else {
+    _animejsLibAnimeEsJsDefault.default({
+      targets: ".img",
+      translateX: -800,
+      duration: 2000,
+      easing: 'easeInOutSine',
+      complete: function (anim) {
+        leftImg.src = _imagesJpgDefault.default[`image-${image}`];
+        leftImg.className = "leftImg img";
+        centerImg.src = _imagesJpgDefault.default[`image-${image + 1}`];
+        centerImg.className = "centerImg img";
+        rightImg.src = _imagesJpgDefault.default[`image-${image + 2}`];
+        rightImg.className = "rightImg img";
+        dotsAll[image - 1].style.color = "rgba(255,255,255,0.4)";
+        dotsAll[image].style.color = "rgba(255,255,255,0.8)";
+        image += 1;
+        _animejsLibAnimeEsJsDefault.default({
+          targets: ".img",
+          translateX: 0,
+          duration: 0
+        });
+      }
+    });
+  }
+};

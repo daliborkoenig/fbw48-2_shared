@@ -1,0 +1,25 @@
+24
+88/home/dci/1_web_dev/14_06_2021/browser-fetch-promises-daliborkoenig/src/images/README.md1623671470143636658 0
+78/home/dci/1_web_dev/14_06_2021/browser-fetch-promises-daliborkoenig/src/images1623671470143636658 1
+78/home/dci/1_web_dev/14_06_2021/browser-fetch-promises-daliborkoenig/.gitignore1623671470139636581 0
+87/home/dci/1_web_dev/14_06_2021/browser-fetch-promises-daliborkoenig/src/fonts/README.md1623671470143636658 0
+77/home/dci/1_web_dev/14_06_2021/browser-fetch-promises-daliborkoenig/src/fonts1623671470143636658 1
+79/home/dci/1_web_dev/14_06_2021/browser-fetch-promises-daliborkoenig/src/scripts1623671470143636658 1
+77/home/dci/1_web_dev/14_06_2021/browser-fetch-promises-daliborkoenig/README.md1623671470139636581 0
+84/home/dci/1_web_dev/14_06_2021/browser-fetch-promises-daliborkoenig/reference-images1623671470143636658 1
+85/home/dci/1_web_dev/14_06_2021/browser-fetch-promises-daliborkoenig/webpack.config.js1623671470147636735 0
+78/home/dci/1_web_dev/14_06_2021/browser-fetch-promises-daliborkoenig/src/styles1623671470147636735 1
+88/home/dci/1_web_dev/14_06_2021/browser-fetch-promises-daliborkoenig/src/styles/main.scss1623671470147636735 0
+72/home/dci/1_web_dev/14_06_2021/browser-fetch-promises-daliborkoenig/dist1623671522996651881 1
+90/home/dci/1_web_dev/14_06_2021/browser-fetch-promises-daliborkoenig/dist/index.df6bb510.js1623671522988651727 0
+91/home/dci/1_web_dev/14_06_2021/browser-fetch-promises-daliborkoenig/dist/index.517f8cbb.css1623671522988651727 0
+94/home/dci/1_web_dev/14_06_2021/browser-fetch-promises-daliborkoenig/reference-images/modal.png1623671470143636658 0
+83/home/dci/1_web_dev/14_06_2021/browser-fetch-promises-daliborkoenig/dist/index.html1623671522984651650 0
+94/home/dci/1_web_dev/14_06_2021/browser-fetch-promises-daliborkoenig/dist/index.df6bb510.js.map1623671522996651881 0
+82/home/dci/1_web_dev/14_06_2021/browser-fetch-promises-daliborkoenig/src/index.html1623671470143636658 0
+71/home/dci/1_web_dev/14_06_2021/browser-fetch-promises-daliborkoenig/src1623671470147636735 1
+95/home/dci/1_web_dev/14_06_2021/browser-fetch-promises-daliborkoenig/dist/index.517f8cbb.css.map1623671522996651881 0
+67/home/dci/1_web_dev/14_06_2021/browser-fetch-promises-daliborkoenig1623671567081498036 1
+80/home/dci/1_web_dev/14_06_2021/browser-fetch-promises-daliborkoenig/package.json1623671504828302994 0
+88/home/dci/1_web_dev/14_06_2021/browser-fetch-promises-daliborkoenig/src/scripts/index.js1623671470143636658 0
+75/home/dci/1_web_dev/14_06_2021/browser-fetch-promises-daliborkoenig/LICENSE1623671470139636581 0
