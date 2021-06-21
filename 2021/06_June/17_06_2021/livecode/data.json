@@ -1,0 +1,92 @@
+[
+  {
+   "_id": "d436cc8e-a1ac-11eb-ac18-c98a17456615",
+   "firstName": "Clint",
+   "lastName": "Novak",
+   "email": "clint.novak@outlook.com",
+   "password": "07Dr0td17q",
+   "isAdmin": true,
+   "date": "2021-06-17T08:59:26.644Z"
+  },
+  {
+   "_id": "d439b3a5-a1ac-11eb-ac18-c98a17456615",
+   "firstName": "James",
+   "lastName": "Schaefer",
+   "email": "james.schaefer@gmail.com",
+   "password": "zHI4oYaOG9",
+   "isAdmin": true,
+   "date": "2021-06-17T08:59:26.644Z"
+  },
+  {
+   "_id": "d4393dc4-a1ac-11eb-ac18-c98a17456615",
+   "firstName": "Dennis",
+   "lastName": "Ibarra",
+   "email": "dennis.ibarra@aol.com",
+   "password": "tWgcxx7SvK",
+   "isAdmin": false,
+   "date": "2021-06-17T08:59:26.644Z"
+  },
+  {
+   "_id": "d43a015a-a1ac-11eb-ac18-c98a17456615",
+   "firstName": "Felix",
+   "lastName": "Quinn",
+   "email": "felix.quinn@yahoo.com",
+   "password": "XLEXbb9JsO",
+   "isAdmin": false,
+   "date": "2021-06-17T08:59:26.644Z"
+  },
+  {
+   "_id": "d43a011b-a1ac-11eb-ac18-c98a17456615",
+   "firstName": "Clayton",
+   "lastName": "Duarte",
+   "email": "clayton.duarte@tmobile.com",
+   "password": "mnSNxWynW7",
+   "isAdmin": true,
+   "date": "2021-06-17T08:59:26.644Z"
+  },
+  {
+   "_id": "d43853e5-a1ac-11eb-ac18-c98a17456615",
+   "firstName": "Mike",
+   "lastName": "Rogers",
+   "email": "mike.rogers@outlook.com",
+   "password": "9wtDpWD1PR",
+   "isAdmin": true,
+   "date": "2021-06-17T08:59:26.644Z"
+  },
+  {
+   "_id": "d4396696-a1ac-11eb-ac18-c98a17456615",
+   "firstName": "Fernando",
+   "lastName": "Hogan",
+   "email": "fernando.hogan@tmobile.com",
+   "password": "JzwRbQBv9O",
+   "isAdmin": true,
+   "date": "2021-06-17T08:59:26.644Z"
+  },
+  {
+   "_id": "d439b546-a1ac-11eb-ac18-c98a17456615",
+   "firstName": "Monique",
+   "lastName": "Marsh",
+   "email": "monique.marsh@outlook.com",
+   "password": "0Jvju8vrtW",
+   "isAdmin": true,
+   "date": "2021-06-17T08:59:26.644Z"
+  },
+  {
+   "_id": "d4393f17-a1ac-11eb-ac18-c98a17456615",
+   "firstName": "Kurtis",
+   "lastName": "Martin",
+   "email": "kurtis.martin@yahoo.com",
+   "password": "RHTYNC0DEh",
+   "isAdmin": false,
+   "date": "2021-06-17T08:59:26.644Z"
+  },
+  {
+   "_id": "d438050f-a1ac-11eb-ac18-c98a17456615",
+   "firstName": "Shannon",
+   "lastName": "Gallegos",
+   "email": "shannon.gallegos@outlook.com",
+   "password": "WHm4AO12XG",
+   "isAdmin": false,
+   "date": "2021-06-17T08:59:26.644Z"
+  }
+ ]

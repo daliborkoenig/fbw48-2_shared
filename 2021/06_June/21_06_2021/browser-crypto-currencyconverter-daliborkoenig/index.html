@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Crypto converter</title>
+</head>
+<body>
+  <form action="" method="" id="form">
+    <h1>CRYPTO CONVERTER</h1>
+    <div>
+      <label for="crypto">Crypto-currency</label>
+      <select id="crypto" name="crypto">
+        <option value="" disabled selected>Select Crypto</option>
+        <option value="BTC">BTC</option>
+        <option value="XRP">XRP</option>
+        <option value="EOS">EOS</option>
+        <option value="LTC">LTC</option>
+        <option value="ETH">ETH</option>
+      </select>
+    </div>
+    <input type="number" placeholder="...write the amount">
+    <div>
+      <label for="curr">Currency</label>
+      <select id="curr" name="curr">
+        <option value="" disabled selected>Select Currency</option>
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
+        <option value="AUD">AUD</option>
+        <option value="HK">HK</option>
+      </select>
+    </div>
+    <input type="number" disabled>
+    <input type="submit" value="Convert">
+  </form>
+  <script src="./app.js"></script>
+</body>
+</html>

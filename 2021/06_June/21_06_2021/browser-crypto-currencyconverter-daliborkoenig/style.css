@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  font-family: arial;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+}
+div{
+  display: flex;
+  border-radius: 20px;
+}
+select,
+label,
+input{
+  padding: 10px;
+  margin-top: 20px;
+}
+label{
+  background-color: blue;
+  color: white;
+  width: 15%;
+}
+select{
+  width: 85%;
+}
+input[type=submit]{
+  width: 10%;
+}
+
+form div:nth-child(4) label{
+  background-color: red;
+}
