@@ -1,0 +1,29 @@
+.App {
+  text-align: center;
+}
+
+.Header {
+  height: 100px;
+  width: 100%;
+  background-color: aquamarine;
+  text-align: left;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+li{
+  padding: 10px;
+}
+
+.Footer {
+  height: 100px;
+  width: 100%;
+  background-color: aqua;
+}

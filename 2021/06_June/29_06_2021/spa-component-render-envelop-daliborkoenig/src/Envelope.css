@@ -1,0 +1,44 @@
+body{
+  height: 100vh;
+  width: 100vw;
+}
+
+#root{
+  height: 100%;
+  width: 100%;
+}
+
+.envelope{
+  width: 80%;
+  height: 60%;
+  white-space: pre-wrap;
+}
+
+.sender{
+  float: left;
+  width: 25%;
+  height: 25%;
+  padding: 40px;
+}
+.receiver{
+  margin-left: 40%;
+  margin-top: 15%;
+  width: 25%;
+  height: 25%;
+}
+
+.stamp{
+  float: right;
+  width: 10%;
+  height: 40%;
+  margin: 10px;
+}
+
+p{
+  transform: rotate(-45deg);
+  color: grey;
+  font-weight: 900;
+  padding-right: 60px;
+  padding-top: 80px;
+  font-size: 20px;
+}

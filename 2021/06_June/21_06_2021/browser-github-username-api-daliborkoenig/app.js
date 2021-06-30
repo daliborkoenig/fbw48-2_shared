@@ -4,11 +4,11 @@ const results = document.querySelector("#results")
 
 formElem.addEventListener('submit', (e) => {
   e.preventDefault();
-  // console.log(userInp[0].value);
   async function fetchData(){
     const res = await fetch(`https://api.github.com/users/${userInp[0].value}/repos`);
-    // console.log(res.ok);
-    const result = await res.json();
+     const result = await res.json();
+     result.sort((a, b) => b.pushed_at.localeCompare(a.pushed_at));
+     console.log(result);
     if(!res.ok){}
     else{
       results.innerHTML = ""
