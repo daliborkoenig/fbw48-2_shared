@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.App{
+  background-color: lightblue;
+  width: 100vw;
+  height: 100vh;
+}
+.Header{
+  width: 100%;
+  height: 120px;
+  border: 2px solid grey;
+  padding: 5px;
+}
+
+.Main{
+  border: 2px solid grey;
+  height: 600px;
+  padding: 20px;
+  width: 100%;
+}
+
+.userInput{
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  height: 50px;
+}
+.userInput input{
+  width: 62%;
+}
+.userInput button{
+  width: 36%;
+}
+table{
+  margin-top: 20px;
+  background-color: beige;
+}
+th{
+  border-left: 2px solid white;
+  background-color: lightblue;
+}
+td{
+  border-left: 2px solid white;
+}
+tr:nth-child(even){
+  background-color: lightcyan;
+}
+
+.whatever{
+  float: right;
+  padding-top: 50px;
+}
+.whatever span {
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.whatever span:hover{
+  border-bottom: 2px solid black;
+}
+
+.About{
+  text-align: center;
+  padding-top: 100px;
+}
