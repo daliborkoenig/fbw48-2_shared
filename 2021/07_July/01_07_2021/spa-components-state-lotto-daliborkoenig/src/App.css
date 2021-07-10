@@ -1,0 +1,98 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p{
+  margin: 20px;
+}
+.App{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.title{
+  position: absolute;
+  top: 20%;
+
+}
+.LuckyNumbers{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sixnumbers,.euronumbers{
+  width: 30%;
+  /* height: 50%; */
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.sixnumbers div:nth-child(7){
+  background-color: cadetblue;
+}
+.euronumbers div:nth-child(7),
+.euronumbers div:nth-child(6){
+  background-color: cadetblue;
+}
+.number{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border: 2px solid cadetblue;
+  border-radius: 50%;
+}
+.buttons{
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+}
+
+.buttons button:nth-child(1){
+  color: cadetblue;
+  width: 30%;
+  border: 2px solid cadetblue;
+}
+.buttons button:nth-child(2){
+  background-color: cadetblue;
+  color: white;
+  width: 69%;
+  border: 2px solid cadetblue;
+}
+button:active{
+  outline: 2px solid lightseagreen;
+}
+
+.choicebtn{
+  width: 220px;
+  height: 50px;
+  margin: 20px;
+}
+.start button:nth-child(1){
+  background: url('./Images/logo-lotto6aus49.svg') no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-origin: content-box;
+  padding: 10px;
+}
+.start button:nth-child(2){
+  background: url('./Images/logo-eurojackpot.svg') no-repeat;
+  background-size: cover;
+  background-size: contain;
+  background-origin: content-box;
+  padding: 10px;
+  background-position: center;
+}
