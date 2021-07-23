@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.App{
+  width: 100vw;
+  height: 100vh;
+}
+
+.Dogs{
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.dog{
+  margin-right: 20px;
+  margin-top: 20px;
+}
+img{
+  border-radius: 50%;
+  border: 4px solid purple;
+  /* filter: brightness(); */
+}
+
+.result{
+  margin-top: 20px;
+}
