@@ -1,0 +1,91 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: blanchedalmond;
+}
+
+.Navbar{
+  height: 120px;
+  width: 100%;
+}
+.Navbar > h1{
+  padding: 20px;
+}
+.Navbar > ul{
+  list-style: none;
+  display: flex;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+.Navbar > ul > li{
+  padding-right: 20px;
+}
+.Navbar > ul > li:nth-child(2)::before{
+  content: "|";
+  padding-right: 20px;
+}
+.Navbar > ul > li:nth-child(2)::after{
+  content: "|";
+  padding-left: 20px;
+}
+.line{
+  width: 100%;
+  border: 1px solid black;
+}
+
+.Me{
+  padding: 40px;
+  display: flex;
+}
+.Me img{
+  border: 4mm ridge rgb(95, 158, 160);
+}
+.Me-text{
+  padding: 20px;
+}
+.Me-text > p{
+  padding-top: 10px;
+}
+
+.Hobbies{
+  padding: 40px 0px 0px 40px;
+}
+.Hobbies img{
+  padding: 20px 40px 20px 0px;
+}
+
+.Contact{
+  padding: 40px 0px 0px 40px;
+  text-align: left;
+}
+.Contact form{
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin: auto;
+}
+.Contact input[type=submit]{
+  height: 50px;
+  margin: 5px;
+  font-size: 1.5em;
+}
+.Contact input{
+  height: 50px;
+  margin: 5px;
+}
+.Contact textarea{
+  margin: 5px;
+}
+input::placeholder,
+textarea::placeholder{
+  text-align: center;
+  padding: 60px;
+  font-size: 1.5em;
+}
+
