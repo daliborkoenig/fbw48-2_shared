@@ -22,7 +22,7 @@
     ![home](home.png)
     ![QuizExample](QuizExample.png)
     ![component-schema](component-schema.png)
-
+dfg
 **Bonuses**
 
 -   Make your own questions and answers
